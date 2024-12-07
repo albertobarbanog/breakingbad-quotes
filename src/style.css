@@ -1,0 +1,100 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  max-width: 150px; /* Limita el ancho máximo de la imagen */
+  height: auto; /* Mantiene la proporción */
+  margin: 20px auto; /* Centra la imagen */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block; /* Asegura que se comporte como un elemento de bloque */
+}
+
+.container {
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#app-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 20px 0;
+  color: #555;
+  position: relative;
+  padding: 10px;
+  border-left: 5px solid #4caf50;
+}
+
+blockquote::before {
+  content: '“';
+  font-size: 2rem;
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  color: #4caf50;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #app-title {
+    font-size: 1.5rem;
+  }
+}
